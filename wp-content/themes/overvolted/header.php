@@ -66,17 +66,6 @@
 				</div>
 			</div>
 		</div>
-	<nav class="tab-bar">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-		</section>
-		<section class="middle tab-bar-section">
-			
-			
-
-		</section>
-	</nav>
-
 	<?php get_template_part( 'parts/off-canvas-menu' ); ?>
 
 	<?php get_template_part( 'parts/top-bar' ); ?>
