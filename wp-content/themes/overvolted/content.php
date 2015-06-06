@@ -14,13 +14,13 @@
   <div class="blog-featured-image" style="background-image: url('<?php echo $image[0]; ?>')"></div>
 <?php endif; ?>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		<?php foundationpress_entry_meta(); ?>
 	</header>
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 	</div>
 	<footer>
-		<?php $tag = get_the_tags(); if ( ! $tag ) { } else { ?><p><?php the_tags(); ?></p><?php } ?>
+		<?php foundationpress_entry_meta(); ?>
+		<a class="button read-more right" href="<?php the_permalink(); ?>">READ MORE</a>
 	</footer>
 	<hr />
 </article>

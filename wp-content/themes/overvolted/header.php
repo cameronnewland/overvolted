@@ -41,16 +41,21 @@
 		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<?php wp_head(); ?>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ['Droid Sans', 'Droid Serif']
+				}
+			});
+		</script>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php include_once("analyticstracking.php") ?>
 	<?php do_action( 'foundationpress_after_body' ); ?>
-	
 	<div class="off-canvas-wrap" data-offcanvas>
 	<div class="inner-wrap">
-	
 	<?php do_action( 'foundationpress_layout_start' ); ?>
-	
 		<div class="container">
 			<div class="row">
 				<div class="column small-12">
@@ -67,8 +72,6 @@
 			</div>
 		</div>
 	<?php get_template_part( 'parts/off-canvas-menu' ); ?>
-
 	<?php get_template_part( 'parts/top-bar' ); ?>
-
 <section class="container" role="document">
 	<?php do_action( 'foundationpress_after_header' ); ?>

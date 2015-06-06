@@ -4,3 +4,18 @@
 	background-position:center center;
 	background-size:cover;
 }
+
+hr {
+	border: solid $primary-color;
+	border-width: 1px 0 0;
+}
+
+.post-meta {
+	margin-top:1rem;
+}
+
+.post-meta time {
+	color:$primary-color;
+	font-size:1rem;	
+	text-transform: uppercase;
+}
