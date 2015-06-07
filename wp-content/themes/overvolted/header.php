@@ -46,7 +46,7 @@
 		<script>
 			WebFont.load({
 				google: {
-					families: ['Droid Sans', 'Droid Serif']
+					families: ['Open Sans', 'PT Sans']
 				}
 			});
 		</script>
