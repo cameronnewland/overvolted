@@ -26,6 +26,7 @@
 				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
 				<p><?php the_tags(); ?></p>
 				<div><?php foundationpress_entry_meta(); ?></div>
+				<?php get_template_part('parts/related-posts'); ?>
 			</footer>
 			<?php do_action( 'foundationpress_post_before_comments' ); ?>
 			<?php comments_template(); ?>
