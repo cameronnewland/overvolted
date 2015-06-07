@@ -5,24 +5,31 @@
             <?php foundationpress_top_bar_r(); ?>
             <ul class="left">
             	<li>
-            		<a href="<?php echo home_url(); ?>"><img src="/wp-content/themes/overvolted/assets/img/logo.png"></a>
+            		<a href="<?php echo home_url(); ?>">
+            			<img class="logo" src="/wp-content/themes/overvolted/assets/img/logo.png">
+            		</a>
             	</li>
             </ul>
 			<!-- Right Nav Section -->
 			<ul class="right">
 				<li>
 					<a href="http://instagram.com/overvolted">
-						<i class="fa fa-instagram"></i>
+						<i class="icon-instagram"></i>
 					</a>
 				</li>
 				<li>
 					<a href="http://twitter.com/overvolted">
-						<i class="fa fa-twitter"></i>
+						<i class="icon-twitter-sign"></i>
 					</a>
 				</li>
 				<li>
 					<a href="http://facebook.com/overvolted">
-						<i class="fa fa-facebook-official"></i>
+						<i class="icon-facebook-sign"></i>
+					</a>
+				</li>
+				<li>
+					<a href="<?php bloginfo('rss2_url'); ?>">
+						<i class="fa icon-rss-sign"></i>
 					</a>
 				</li>
 			</ul>

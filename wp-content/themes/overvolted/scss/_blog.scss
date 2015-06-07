@@ -20,3 +20,13 @@ hr {
 	font-size:1rem;	
 	text-transform: uppercase;
 }
+
+body.home.blog article.type-post {
+	border:1px solid $primary-color;
+	padding:1rem 0 0 1rem;
+	margin-bottom:1rem;
+}
+
+.read-more {
+	margin:0;
+}

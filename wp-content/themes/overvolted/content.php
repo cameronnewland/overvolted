@@ -22,5 +22,5 @@
 		<?php foundationpress_entry_meta(); ?>
 		<a class="button read-more right" href="<?php the_permalink(); ?>">READ MORE</a>
 	</footer>
-	<hr />
+	<div class="clearfix"></div>
 </article>
