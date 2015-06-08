@@ -32,6 +32,6 @@ body.home.blog article.type-post {
 	font-weight:bold;
 }
 
-.read-more:hover {
+.read-more:hover, article.type-post h2 a:hover {
 	text-decoration:none;
 }
