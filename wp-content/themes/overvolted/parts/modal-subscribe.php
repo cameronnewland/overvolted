@@ -12,6 +12,13 @@
 			<h4>Subscribe to Overvolted using RSS <i class="fa icon-rss-sign"></i></h4>
 		</a>
 	</p>
+<?php /*
+	<p>
+		<h4>Subscribe to Overvolted's Monthly Recap Email:</h4>
+		<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+		<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us8.list-manage.com","uuid":"d97fb91fd43c768b3c5ca39ca","lid":"4de33d9dde"}) })</script>
+	</p>
+*/ ?>
 	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 <?php /* END Pop-up Modal Dialog Box */?>
