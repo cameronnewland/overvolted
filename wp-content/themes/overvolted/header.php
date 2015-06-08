@@ -50,6 +50,7 @@
 				}
 			});
 		</script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php include_once("analyticstracking.php") ?>

@@ -28,7 +28,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="<?php bloginfo('rss2_url'); ?>">
+					<a href="#" data-reveal-id="subscribeModal">
 						<i class="fa icon-rss-sign"></i>
 					</a>
 				</li>

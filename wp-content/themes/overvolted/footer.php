@@ -9,8 +9,8 @@
 	</div>
 	<?php do_action( 'foundationpress_after_footer' ); ?>
 </footer>
+<?php get_template_part('parts/modal','subscribe'); ?>
 <a class="exit-off-canvas"></a>
-
 	<?php do_action( 'foundationpress_layout_end' ); ?>
 	</div>
 </div>
