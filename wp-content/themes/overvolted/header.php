@@ -66,6 +66,20 @@
 			<img class="logo" src="/wp-content/themes/overvolted/assets/img/logo.png">
 		</a>
       </section>
+	<section class="right social-icons show-for-medium-up">
+		<a href="http://instagram.com/overvolted">
+			<i class="fa fa-instagram"></i>
+		</a>
+		<a href="http://twitter.com/overvolted">
+			<i class="fa fa-twitter-square"></i>
+		</a>
+		<a href="http://facebook.com/overvolted">
+			<i class="fa fa-facebook-official"></i>
+		</a>
+		<a href="#" data-reveal-id="subscribeModal">
+			<i class="fa fa-rss"></i>
+		</a>
+	</section>
      </nav>
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 		<div class="container">
@@ -84,6 +98,5 @@
 			</div>
 		</div>
 	<?php get_template_part( 'parts/off-canvas-menu' ); ?>
-	<?php get_template_part( 'parts/top-bar' ); ?>
 <section class="container" role="document">
 	<?php do_action( 'foundationpress_after_header' ); ?>

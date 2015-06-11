@@ -19,12 +19,18 @@
 	font-weight:bold;
 }
 
-// A more subtle background color for the active menu item
-.top-bar-section li.active:not(.has-form) a:not(.button)  {
-	background: #272727;
+.social-icons a {
+	display: inline-block;
+	padding: 1rem;
+	color:rgba(0,0,0,1);
+	font-size:1.5rem;
+	transition:0.6s;
 }
-.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
-	background: #202020;
+
+.social-icons a:hover {
+	color:rgba(0,0,0,0.7);
+	background:rgba(0,0,0,0.1);
+	transition:0.6s;
 }
 
 .top-bar-section ul.left li, .top-bar-section ul.left li:hover, .top-bar-section ul.left li a, .top-bar-section ul.left li a:hover {
