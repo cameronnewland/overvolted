@@ -1,4 +1,4 @@
-<?php /* Pop-up Modal Dialog Box to entive users to subscribe to Overvolted via RSS: */?>
+<?php /* Pop-up Modal Dialog Box to entice users to subscribe to Overvolted via RSS: */?>
 <div id="subscribeModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 	<h2 id="modalTitle">Subscribe to OverVolted</h2>
 	<p class="lead">Use an RSS reader or your favorite blog reading site.</p>

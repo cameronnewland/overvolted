@@ -57,6 +57,16 @@
 	<?php do_action( 'foundationpress_after_body' ); ?>
 	<div class="off-canvas-wrap" data-offcanvas>
 	<div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+      <section class="middle tab-bar-section">
+		<a href="<?php echo home_url(); ?>">
+			<img class="logo" src="/wp-content/themes/overvolted/assets/img/logo.png">
+		</a>
+      </section>
+     </nav>
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 		<div class="container">
 			<div class="row">
