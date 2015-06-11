@@ -16,6 +16,6 @@
         <a href="http://twitter.com/overvolted"><i class="fa fa-twitter-square"></i> Follow On Twitter</a>
     </li>
     <li>
-    	<a href="/"><i class="fa fa-envelope-o"></i> Contact</a>
+    	<a href="/contact"><i class="fa fa-envelope-o"></i> Contact</a>
     </li>
 </aside>

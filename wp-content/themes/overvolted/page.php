@@ -19,7 +19,7 @@
 				<p><?php the_tags(); ?></p>
 			</footer>
 			<?php do_action( 'foundationpress_page_before_comments' ); ?>
-			<?php comments_template(); ?>
+			<?php // comments_template(); ?>
 			<?php do_action( 'foundationpress_page_after_comments' ); ?>
 		</article>
 	<?php endwhile;?>
