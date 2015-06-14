@@ -32,4 +32,12 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
+// Uncomment these and run once and comment them out again to set database values to reflect local environment
+// update_option('siteurl','http://overvolted');
+// update_option('home','http://overvolted');
+
+// Uncomment these and run once and comment them out again to set database values to reflect production environment
+// update_option('siteurl','http://overvolted.com');
+// update_option('home','http://overvolted.com');
+
 ?>
