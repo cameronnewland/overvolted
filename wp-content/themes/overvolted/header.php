@@ -39,8 +39,12 @@
 		<meta name="msapplication-TileColor" content="#ffc40d">
 		<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/mstile-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+<?php if( ENVIRONMENT == "PRODUCTION" ){ ?>
 		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<?php } else { ?>
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome-4.3.0/css/font-awesome.min.css">
+<?php } ?>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/foundation-icons/foundation-icons.css">
 		<?php wp_head(); ?>
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
@@ -51,10 +55,13 @@
 				}
 			});
 		</script>
-		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
 	</head>
 	<body <?php body_class(); ?>>
-	<?php include_once("analyticstracking.php") ?>
+	<?php
+if( ENVIRONMENT == "PRODUCTION" ){
+	include_once("analyticstracking.php");
+}
+	?>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 	<div class="off-canvas-wrap" data-offcanvas>
 	<div class="inner-wrap">
