@@ -40,7 +40,6 @@
 		<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/mstile-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 <?php if( ENVIRONMENT == "PRODUCTION" ){ ?>
-		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <?php } else { ?>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome-4.3.0/css/font-awesome.min.css">
@@ -51,7 +50,7 @@
 		<script>
 			WebFont.load({
 				google: {
-					families: ['Open Sans', 'PT Sans']
+					families: ['PT Sans']
 				}
 			});
 		</script>
@@ -75,13 +74,13 @@ if( ENVIRONMENT == "PRODUCTION" ){
 		</a>
       </section>
 	<section class="right social-icons show-for-medium-up">
-		<a href="http://instagram.com/overvolted">
+		<a target="_blank" href="http://instagram.com/overvolted">
 			<i class="fa fa-instagram"></i>
 		</a>
-		<a href="http://twitter.com/overvolted">
+		<a target="_blank" href="http://twitter.com/overvolted">
 			<i class="fa fa-twitter-square"></i>
 		</a>
-		<a href="http://facebook.com/overvolted">
+		<a target="_blank" href="http://facebook.com/overvolted">
 			<i class="fa fa-facebook-official"></i>
 		</a>
 		<a href="#" data-reveal-id="subscribeModal">

@@ -24,7 +24,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	// Local Environment
 	if( ENVIRONMENT == "LOCAL" ){
 		// Self hosted jQuery placed in the footer. (Comment the script above and uncomment the script below if you want to switch).
-		wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery-2.1.4.min.js', array(), '2.1.4', true );
+		wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery-2.1.4.min.js', array(), '2.1.4', false );
 	}
 
 	// If you'd like to cherry-pick the foundation components you need in your project, head over to Gruntfile.js and see lines 67-88
