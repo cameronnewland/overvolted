@@ -10,15 +10,16 @@
 .left-off-canvas-menu a {
 	display: block;
 	padding: 1rem;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid scale-color($button-bg-color, $lightness: $button-function-factor);
 	color:#fff;
 	text-transform: uppercase;
 	font-weight:bold;
 	transition:0.2s;
 }
 .left-off-canvas-menu a:hover {
-	background:lighten($primary-color, 10%);
+	background:scale-color($button-bg-color, $lightness: $button-function-factor);
 	transition:0.2s;
+	text-decoration:none;
 }
 
 .social-icons a {
