@@ -34,19 +34,30 @@ endif; ?>
 				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
 				<p><?php the_tags(); ?></p>
 				<div class="clearfix"></div>
-				<div class="row">
-					<div class="column small-3">
-						<h4 class="model-meta-value"><?php the_field('price'); ?></h4>
+				<div class="row model-meta">
+					<div class="column small-3 text-center">
+						<div>
+							<h3 class="model-meta"><i class="fi-pricetag-multiple"></i></h3>
+							<h4 class="model-meta-value"><?php the_field('price'); ?></h4>
+						</div>
 					</div>
-					<div class="column small-3">
-						<h3 class="model-meta">Battery Capacity</h3>
-						<h4 class="model-meta-value"><?php the_field('battery_watt_hours'); ?>Wh</h4>
-					</div>					<div class="column small-3">
-						<h3 class="model-meta">Battery Amp Hours</h3>
-						<h4 class="model-meta-value"><?php the_field('battery_amp_hours'); ?>Ah</h4>
-					</div>					<div class="column small-3">
-						<h3 class="model-meta">Battery Voltage</h3>
-						<h4 class="model-meta-value"><?php the_field('battery_voltage'); ?>V</h4>
+					<div class="column small-3 text-center">
+						<div>
+							<h3 class="model-meta"><i class="fi-battery-full large"></i></h3>
+							<h4 class="model-meta-value"><?php the_field('range_low_imperial'); ?>-<?php the_field('range_high_imperial'); ?>mi., <?php the_field('battery_watt_hours'); ?>Wh</h4>
+						</div>
+					</div>
+					<div class="column small-3 text-center">
+						<div>
+							<h3 class="model-meta"><i class="fa fa-tachometer"></i></h3>
+							<h4 class="model-meta-value"><?php the_field('top_speed_imperial'); ?> MPH</h4>
+						</div>
+					</div>
+					<div class="column small-3 text-center">
+						<div>
+							<h3 class="model-meta"><i class="fa fa-bolt"></i></h3>
+							<h4 class="model-meta-value"><?php the_field('nominal_motor_power'); ?>W</h4>
+						</div>
 					</div>
 				</div>
 			</footer>

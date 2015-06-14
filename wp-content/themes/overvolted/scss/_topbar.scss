@@ -7,16 +7,18 @@
 	h1 a { font-weight: 500; }
 }
 
-.left-off-canvas-menu li {
-  display: block;
-  padding: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.left-off-canvas-menu li a {
+.left-off-canvas-menu a {
+	display: block;
+	padding: 1rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	color:#fff;
 	text-transform: uppercase;
 	font-weight:bold;
+	transition:0.2s;
+}
+.left-off-canvas-menu a:hover {
+	background:lighten($primary-color, 10%);
+	transition:0.2s;
 }
 
 .social-icons a {
