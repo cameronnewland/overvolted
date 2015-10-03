@@ -54,6 +54,7 @@
 				}
 			});
 		</script>
+<?php get_template_part('parts/json','ld-social-profiles'); ?>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php

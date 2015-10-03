@@ -8,18 +8,24 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<h6 style="text-transform:uppercase;color: #378B2E;">BY <?php the_author(); ?></h6>
 			</header>
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div class="entry-content">
 
-			<?php /* if ( has_post_thumbnail() ) : ?>
+			<?php if ( has_post_thumbnail() ) : ?>
 				<div class="row">
-					<div class="column">
-						<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
+					<div class="column small-12 large-8">
+						<?php the_post_thumbnail( 'large' ); ?>
+					</div>
+					<div class="column small-12 large-4">
+						<?php if( get_field('google_maps_embed_url') ){ ?>
+						<!-- <iframe src="<?php the_field( 'google_maps_embed_url' ); ?>" width="100%" height="425" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+<iframe width="100%" height="425" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAmO-T4ApJdIhZi-cRkD8AdonZ_eL4ykFQ&q=<?php $addressLineOne = get_field('address_line_1'); echo urlencode( $addressLineOne ); ?>,<?php $cityandstate = get_field('city')." ".get_field('state_or_province'); echo urlencode( $cityandstate ); ?>" allowfullscreen>
+</iframe>
+						<?php } ?>
 					</div>
 				</div>
-			<?php endif; */ ?>
+			<?php endif; ?>
 
 			<?php the_content(); ?>
 			</div>
