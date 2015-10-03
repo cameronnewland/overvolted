@@ -4,5 +4,6 @@
     	<a target="_blank" href="/subscribe"><i class="fa fa-newspaper-o"></i> Subscribe</a>
         <a target="_blank" href="http://instagram.com/overvolted"><i class="fa fa-instagram"></i> Follow On Instagram</a>
         <a target="_blank" href="http://facebook.com/overvolted"><i class="fa fa-facebook-official"></i> Follow On Facebook</a>
+        <a target="_blank" href="http://twitter.com/overvolted"><i class="fa fa-twitter-square"></i> Follow On Twitter</a>
     	<a href="/contact"><i class="fa fa-envelope-o"></i> Contact</a>
 </aside>

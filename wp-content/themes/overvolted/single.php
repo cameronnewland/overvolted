@@ -8,6 +8,7 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<h6 style="text-transform:uppercase;color: #378B2E;">BY <?php the_author(); ?></h6>
 			</header>
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div class="entry-content">
