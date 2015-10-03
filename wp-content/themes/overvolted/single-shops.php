@@ -19,9 +19,10 @@
 					</div>
 					<div class="column small-12 large-4">
 						<?php if( get_field('google_maps_embed_url') ){ ?>
-						<!-- <iframe src="<?php the_field( 'google_maps_embed_url' ); ?>" width="100%" height="425" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-<iframe width="100%" height="425" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAmO-T4ApJdIhZi-cRkD8AdonZ_eL4ykFQ&q=<?php $addressLineOne = get_field('address_line_1'); echo urlencode( $addressLineOne ); ?>,<?php $cityandstate = get_field('city')." ".get_field('state_or_province'); echo urlencode( $cityandstate ); ?>" allowfullscreen>
-</iframe>
+						<iframe src="<?php the_field( 'google_maps_embed_url' ); ?>" width="100%" height="425" frameborder="0" style="border:0" allowfullscreen></iframe>
+<?php /*
+<iframe width="100%" height="425" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAmO-T4ApJdIhZi-cRkD8AdonZ_eL4ykFQ&q=<?php $addressLineOne = get_field('address_line_1'); echo urlencode( $addressLineOne ); ?>,<?php $cityandstate = get_field('city')." ".get_field('state_or_province'); echo urlencode( $cityandstate ); ?>" allowfullscreen></iframe>
+ */ ?>
 						<?php } ?>
 					</div>
 				</div>
