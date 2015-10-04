@@ -33,9 +33,10 @@ $tuatara     : #444444;
 $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
+$ov-green	 : #378B2E;
 
 // We use these as default colors throughout
-$primary-color: #378B2E;
+$primary-color: $ov-green;
 $secondary-color: #074600;
 $alert-color: #f04124;
 $success-color: #43AC6A;
