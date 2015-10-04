@@ -1,6 +1,7 @@
 <aside class="left-off-canvas-menu" aria-hidden="true">
     <?php foundationpress_mobile_off_canvas(); ?>
     	<a href="/"><i class="fa fa-motorcycle"></i> Latest Ebike News</a>
+    	<a href="/shops/"><i class="fa fa-building-o"></i> Electric Bike Shops</a>
     	<a target="_blank" href="/subscribe"><i class="fa fa-newspaper-o"></i> Subscribe</a>
         <a target="_blank" href="http://instagram.com/overvolted"><i class="fa fa-instagram"></i> Follow On Instagram</a>
         <a target="_blank" href="http://facebook.com/overvolted"><i class="fa fa-facebook-official"></i> Follow On Facebook</a>
