@@ -30,6 +30,31 @@
     height: auto !important;
 }
 
-#gform_1 #field_1_5 {
-	margin-bottom:1rem;
+/* Electric Bike Shops Form: */
+
+#gform_1 {
+	#field_1_5 {
+		margin-bottom:1rem;
+	}
+	::-webkit-input-placeholder {
+	   color: rgba(0,0,0,0.7);
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: rgba(0,0,0,0.7);
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: rgba(0,0,0,0.7);
+	}
+
+	:-ms-input-placeholder {  
+	   color: rgba(0,0,0,0.7);
+	}
+
+	input[type="text"], select {
+		padding:0.5rem 0.5rem 0.5rem 1rem;
+		font-size:1rem;
+		width:100%;
+	}
 }
