@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="google-site-verification" content="4A6N9a3B4f7F_6-9zjA2YPmoIzTdurSwxBLhCm8h_ac" />
 		<title><?php if ( is_category() ) {
 			echo 'Category Archive for &quot;'; single_cat_title(); echo '&quot; | '; bloginfo( 'name' );
 		} elseif ( is_tag() ) {

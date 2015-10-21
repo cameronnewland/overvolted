@@ -8,3 +8,12 @@
   ga('send', 'pageview');
 
 </script>
+
+<?php /* New Analytics (to test and see if search engine keywords work again): */ ?>
+
+<script>
+
+  ga('create', 'UA-2842612-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
