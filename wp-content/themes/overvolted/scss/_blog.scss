@@ -38,6 +38,10 @@ article.type-post, .post-type-archive article {
 	margin-bottom:1rem;
 }
 
+body.single-post article {
+	border:none;
+}
+
 article .post-body {
 	padding:1rem 0 0 1rem;
 }
