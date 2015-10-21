@@ -25,7 +25,7 @@ if( $posts ): ?>
 						<div>
 							<h3>Brands Carried:</h3>
 							<ul>
-    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+    <?php foreach( $posts as $post): ?>
         <?php setup_postdata($post); ?>
 								<li>
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

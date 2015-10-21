@@ -2,6 +2,8 @@
 <div class="row">
 	<div class="small-12 large-9 columns" role="main">
 
+		<h1>Electric Bike Shops</h1>
+
 	<?php if ( have_posts() ) : ?>
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
