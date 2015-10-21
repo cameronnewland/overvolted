@@ -2,8 +2,16 @@
   max-width: 100%;
   padding-top: 50%;
   background-position: left center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+.blog-featured-image.square {
+  padding-top: 100%;
+}
+
+.blog-featured-image.portrait {
+  padding-top: 200%;
 }
 
 hr {
@@ -21,10 +29,17 @@ hr {
 	text-transform: uppercase;
 }
 
-body.home.blog article.type-post {
+
+// body.home.blog article.type-post {
+article.type-post, .post-type-archive article {
 	border:1px solid $primary-color;
-	padding:1rem 0 0 1rem;
+	// padding:1rem 0 0 1rem;
+	padding:0;
 	margin-bottom:1rem;
+}
+
+article .post-body {
+	padding:1rem 0 0 1rem;
 }
 
 .read-more {

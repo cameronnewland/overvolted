@@ -9,11 +9,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
-<?php if (has_post_thumbnail( $post->ID ) ): ?>
-<?php if ( has_post_thumbnail() ) {
+<?php if ( has_post_thumbnail() ) :
 		the_post_thumbnail();
-	} ?>
-<?php endif; ?>
+	else: ?>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-photo-yet.png">
+<?php endif ?>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</header>
 	<div class="entry-content">

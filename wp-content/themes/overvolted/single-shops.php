@@ -11,11 +11,14 @@
 			</header>
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div class="entry-content">
-
-			<?php if ( has_post_thumbnail() ) : ?>
 				<div class="row">
-					<div class="column small-12 large-8 thumbnail-column">
+					<div class="column small-12 large-7 thumbnail-column">
+					<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'large' ); ?>
+					<?php
+					else: ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-photo-yet.png">
+<?php 				endif; ?>
 <?php 
 $posts = get_field('brands_carried');
 if( $posts ): ?>
@@ -33,12 +36,9 @@ if( $posts ): ?>
 <?php wp_reset_postdata();
 endif; ?>
 					</div>
-					<div class="column small-12 large-4">
+					<div class="column small-12 large-5">
 						<?php if( get_field('google_maps_embed_url') ){ ?>
-						<iframe src="<?php the_field( 'google_maps_embed_url' ); ?>" width="100%" height="425" frameborder="0" style="border:0" allowfullscreen></iframe>
-<?php /*
-<iframe width="100%" height="425" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAmO-T4ApJdIhZi-cRkD8AdonZ_eL4ykFQ&q=<?php $addressLineOne = get_field('address_line_1'); echo urlencode( $addressLineOne ); ?>,<?php $cityandstate = get_field('city')." ".get_field('state_or_province'); echo urlencode( $cityandstate ); ?>" allowfullscreen></iframe>
- */ ?>
+						<iframe src="<?php the_field( 'google_maps_embed_url' ); ?>" width="100%" height="369" frameborder="0" style="border:0" allowfullscreen></iframe>
 						<?php } ?>
 						<div class="shop_address">
 							<div class="row">
@@ -79,8 +79,6 @@ endif; ?>
 						</div>
 					</div>
 				</div>
-			<?php endif; ?>
-
 			<?php the_content(); ?>
 			</div>
 			<footer>
