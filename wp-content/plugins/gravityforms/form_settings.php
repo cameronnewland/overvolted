@@ -436,7 +436,7 @@ class GFFormSettings {
         <tr id="sub_label_placement_setting">
             <th>
                 ' .
-			__( 'Sub-Label Placement', 'gravityforms' ) . ' ' .
+			__( 'Sub-label placement', 'gravityforms' ) . ' ' .
 			gform_tooltip( 'form_sub_label_placement', '', true ) .
 			'
 			</th>
@@ -1567,12 +1567,6 @@ class GFFormSettings {
 
 		$form = ! is_array( $form_id ) ? RGFormsModel::get_form_meta( $form_id ) : $form_id;
 
-		/**
-		 * Fires right before the confirmation that a form is deleted
-		 *
-		 * @param int $form['confirmations'][ $confirmation_id ] The delete confirmation object ID
-		 * @para array $form The Form object to filter through
-		 */
 		do_action( 'gform_pre_confirmation_deleted', $form['confirmations'][ $confirmation_id ], $form );
 
 		unset( $form['confirmations'][ $confirmation_id ] );
@@ -1871,18 +1865,18 @@ class GFConfirmationTable extends WP_List_Table {
 	}
 
 	public static function get_column_type( $item ) {
-		switch ( rgar( $item, 'type' ) ) {
+		switch ( $item['type'] ) {
 			case 'message':
-				return __( 'Text', 'gravityforms' );
-
+				$type = __( 'Text', 'gravityforms' );
+				break;
 			case 'page':
-				return __( 'Page', 'gravityforms' );
-
+				$type = __( 'Page', 'gravityforms' );
+				break;
 			case 'redirect':
-				return __( 'Redirect', 'gravityforms' );
+				$type = __( 'Redirect', 'gravityforms' );
+				break;
 		}
-
-		return '';
+		return $type;
 	}
 
 }
