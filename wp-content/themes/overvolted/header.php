@@ -9,7 +9,11 @@
 		} elseif ( is_tag() ) {
 			echo 'Tag Archive for &quot;'; single_tag_title(); echo '&quot; | '; bloginfo( 'name' );
 		} elseif ( is_archive() ) {
-			wp_title( '' ); echo ' Archive | '; bloginfo( 'name' );
+			if( is_archive('shops') ){
+				echo 'Best Electric Bike ';wp_title( '' ); echo ' | '; bloginfo( 'name' );
+			} else {
+				wp_title( '' ); echo ' Archive | '; bloginfo( 'name' );
+			}
 		} elseif ( is_search() ) {
 			echo 'Search for &quot;'.esc_html( $s ).'&quot; | '; bloginfo( 'name' );
 		} elseif ( is_home() || is_front_page() ) {
