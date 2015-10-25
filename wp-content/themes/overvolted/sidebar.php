@@ -12,7 +12,7 @@
 	<a href="/contact"><i class="fa fa-envelope-o"></i> Contact</a>
 </div>
 <div class="sidebar-categories">
-	<h5>Browse Posts By Category:</h5>
+	<h5>News By Category:</h5>
 		<div class="post-categories">
 			<ul>
 <?php 
