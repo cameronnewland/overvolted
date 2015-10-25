@@ -76,6 +76,7 @@ endif; ?>
 									$haystack = get_field('website_url');
 									$needle   = 'http://';
 									$pos = strpos($haystack, $needle);
+									$pos = strpos($haystack, 'https://');
 									if( $pos === false ){
 										echo 'http://'.$haystack;
 									} else {
