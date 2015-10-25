@@ -72,7 +72,15 @@ endif; ?>
 							<div class="row">
 								<div class="column small-2"><i class="fa fa-external-link"></i></div>
 								<div class="column small-10">
-									<div><a target="_blank" href="http://<?php the_field('website_url'); ?>"><?php the_field('website_url'); ?></a></div>
+									<div><a target="_blank" href="http://<?php 
+									$haystack = get_field('website_url');
+									$needle   = 'http://';
+									$pos = strpos($haystack, $needle);
+									if( $pos === false ){
+										echo 'http://'.$haystack;
+									} else {
+										the_field('website_url');
+									} ?>"><?php echo $haystack; ?></a></div>
 								</div>
 							</div>
 							<?php } ?>
