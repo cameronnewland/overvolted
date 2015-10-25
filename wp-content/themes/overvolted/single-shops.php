@@ -72,11 +72,12 @@ endif; ?>
 							<div class="row">
 								<div class="column small-2"><i class="fa fa-external-link"></i></div>
 								<div class="column small-10">
-									<div><a target="_blank" href="http://<?php 
+									<div><a target="_blank" href="<?php 
 									$haystack = get_field('website_url');
-									$needle   = 'http://';
+									$needle = 'http://';
+									$needle2 = 'http://';
 									$pos = strpos($haystack, $needle);
-									$pos2 = strpos($haystack, 'https://');
+									$pos2 = strpos($haystack, $needle2);
 									if( $pos === false && $pos2 === false ){
 										echo 'http://'.$haystack;
 									} else {
