@@ -75,7 +75,7 @@ endif; ?>
 									<div><a target="_blank" href="<?php 
 									$haystack = get_field('website_url');
 									$needle = 'http://';
-									$needle2 = 'http://';
+									$needle2 = 'https://';
 									$pos = strpos($haystack, $needle);
 									$pos2 = strpos($haystack, $needle2);
 									if( $pos === false && $pos2 === false ){
