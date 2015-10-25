@@ -72,7 +72,39 @@ endif; ?>
 							<div class="row">
 								<div class="column small-2"><i class="fa fa-external-link"></i></div>
 								<div class="column small-10">
-									<div><a href="http://<?php the_field('website_url'); ?>"><?php the_field('website_url'); ?></a></div>
+									<div><a target="_blank" href="http://<?php the_field('website_url'); ?>"><?php the_field('website_url'); ?></a></div>
+								</div>
+							</div>
+							<?php } ?>
+							<?php if( get_field('instagram_link') ){ ?>
+							<div class="row">
+								<div class="column small-2"><i class="fa fa-instagram"></i></div>
+								<div class="column small-10">
+									<div><a target="_blank" href="<?php the_field('instagram_link'); ?>">Instagram</a></div>
+								</div>
+							</div>
+							<?php } ?>
+							<?php if( get_field('twitter_link') ){ ?>
+							<div class="row">
+								<div class="column small-2"><i class="fa fa-twitter-square"></i></div>
+								<div class="column small-10">
+									<div><a target="_blank" href="<?php the_field('twitter_link'); ?>">Twitter</a></div>
+								</div>
+							</div>
+							<?php } ?>
+							<?php if( get_field('facebook_link') ){ ?>
+							<div class="row">
+								<div class="column small-2"><i class="fa fa-facebook-official"></i></div>
+								<div class="column small-10">
+									<div><a target="_blank" href="<?php the_field('facebook_link'); ?>">Facebook</a></div>
+								</div>
+							</div>
+							<?php } ?>
+							<?php if( get_field('youtube_link') ){ ?>
+							<div class="row">
+								<div class="column small-2"><i class="fa fa-youtube-square"></i></div>
+								<div class="column small-10">
+									<div><a target="_blank" href="<?php the_field('youtube_link'); ?>">YouTube</a></div>
 								</div>
 							</div>
 							<?php } ?>
