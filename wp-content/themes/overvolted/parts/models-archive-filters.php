@@ -23,8 +23,8 @@ foreach($custom_terms as $term) { ?>
 		</div>
 		<div class="column small-12 large-3">
 			<select name="models-speed-classifications" id="models-speed-classifications" placeholder="FRAME STYLE">
-				<option value="" disabled selected>Speed Classifications</option>
-<?php $custom_terms = get_terms('frame_types');
+				<option value="" disabled selected>Speed Classification</option>
+<?php $custom_terms = get_terms('speed_classifications');
 foreach($custom_terms as $term) { ?>
 				<option value="<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
 <?php } ?>

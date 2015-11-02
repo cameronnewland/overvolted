@@ -8,5 +8,8 @@ $(document).ready(function(){
 		$('select#models-frame-style').on('change',function(){
 			window.location.href = "http://overvolted/frame_types/"+$(this).val()+"/";
 		});
+		$('select#models-speed-classifications').on('change',function(){
+			window.location.href = "http://overvolted/speed_classifications/"+$(this).val()+"/";
+		});
 	}
 });
