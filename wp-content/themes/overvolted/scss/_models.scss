@@ -1,3 +1,18 @@
-.model-meta > div > div {
-	border: 1px solid #000;
+body.single-models {
+	.model-meta > div > div {
+		border: 1px solid #000;
+	}
+}
+
+body.post-type-archive-models {
+	@media #{$large-up}{
+		.models-archive-filter-container > .row > .column:first-child {
+			padding:0;
+		}
+	}
+
+	.filter-by-label {
+		line-height:2.25rem;
+		vertical-align: middle;
+	}
 }

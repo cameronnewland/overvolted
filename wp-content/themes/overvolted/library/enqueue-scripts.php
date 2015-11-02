@@ -19,10 +19,8 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	if( ENVIRONMENT == "PRODUCTION" ){
 		// CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header.
 		wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', array(), '2.1.4', false );
-	}
-
-	// Local Environment
-	if( ENVIRONMENT == "LOCAL" ){
+		// Local Environment	
+	} else if( ENVIRONMENT == "LOCAL" ){
 		// Self hosted jQuery placed in the footer. (Comment the script above and uncomment the script below if you want to switch).
 		wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery-2.1.4.min.js', array(), '2.1.4', false );
 	}
