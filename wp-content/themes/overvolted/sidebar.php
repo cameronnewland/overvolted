@@ -1,6 +1,6 @@
 <aside id="sidebar" class="small-12 large-3 columns">
-<?php get_template_part('parts/sidebar','ad-1'); ?>
-<?php get_template_part('parts/sidebar','ad-2'); ?>
+<?php // get_template_part('parts/sidebar','ad-1'); ?>
+<?php // get_template_part('parts/sidebar','ad-2'); ?>
 <div class="sidebar-links">
 	<a href="/"><i class="fa fa-motorcycle"></i> Latest Electric Bike News</a>
 	<a href="/shops/"><i class="fa fa-building-o"></i> Electric Bike Shop Directory</a>
