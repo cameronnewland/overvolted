@@ -5,9 +5,22 @@
 	<?php do_action( 'foundationpress_before_content' ); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
+<?php
+
+// Figures out if the shop has a state/province custom field associated with it, and if not, grabs the state or province taxonomy term and puts that after the city in the title
+$state_or_province = "";
+$terms = get_the_terms( $post->ID, 'state' );
+if( !empty($terms) ){
+	$term = array_pop($terms);
+	$state_or_province = ", ".$term->term_name;
+} else if ( get_field('state_or_province') ) {
+	$state_or_province = ", ".get_field('state_or_province');
+}
+
+?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
-				<h1 class="entry-title"><?php the_title(); ?> - <?php the_field('city'); ?>, <?php the_field('state_or_province'); ?></h1>
+				<h1 class="entry-title"><?php the_title(); ?> - <?php the_field('city'); ?>, <?php echo $state_or_province; ?></h1>
 			</header>
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div class="entry-content">
@@ -48,6 +61,7 @@ endif; ?>
 									<div><?php the_field('address_line_1'); ?></div>
 									<?php if ( get_field('address_line_2') ) { ?><div><?php the_field('address_line_2'); ?></div><?php } ?>
 									<div><?php the_field('city'); ?>, <?php the_field('state_or_province'); ?> <?php the_field('zip_or_postal_code'); ?></div>
+									<div><?php the_field('country'); ?></div>
 								</div>
 							</div>
 						</div>
