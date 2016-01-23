@@ -1,0 +1,10 @@
+body.single-reviews {
+	.voltscore {
+		.score {
+			font-size:4rem;
+			background-color:lighten($ov-green,50%);
+			color:$white;
+			padding:0 1rem 1rem;
+		}
+	}
+}
