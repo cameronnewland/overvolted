@@ -29,12 +29,16 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
 	wp_register_script( 'foundation', get_template_directory_uri() . '/bower_components/foundation/js/foundation.js', array('jquery'), '5.5.2', true );
 
+	// Flickity
+	wp_register_script( 'flickity', get_template_directory_uri() . '/js/vendor/flickity/flickity.pkgd.min.js', array(), '1.0', true );
+
 	// OverVolted Application Script
 	wp_register_script( 'overvolted', get_template_directory_uri() . '/js/app.js', array('jquery'), '1.0', true );
 
 	// Enqueue all registered scripts
 	wp_enqueue_script( 'modernizr' );
 	wp_enqueue_script( 'fastclick' );
+	wp_enqueue_script( 'flickity' );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'foundation' );
 	wp_enqueue_script( 'overvolted' );

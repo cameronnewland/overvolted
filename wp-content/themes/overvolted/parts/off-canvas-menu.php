@@ -1,7 +1,7 @@
 <aside class="left-off-canvas-menu" aria-hidden="true">
     <?php foundationpress_mobile_off_canvas(); ?>
     	<a href="/"><i class="fa fa-motorcycle"></i> Latest Ebike News</a>
-        <a href="/"><i class="fa fa-file-text "></i> Electric Bike Reviews</a>
+        <a href="/reviews"><i class="fa fa-file-text "></i> Electric Bike Reviews</a>
     	<a href="/shops/"><i class="fa fa-building-o"></i> Electric Bike Shops</a>
     	<a href="/best-electric-bike-shops-map/"><i class="fa fa-globe"></i> Best Bike Shops Map</a>
     	<a href="/models/"><i class="fa fa-bicycle"></i> Browse Electric Bikes</a>

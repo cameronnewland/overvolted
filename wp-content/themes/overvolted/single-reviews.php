@@ -27,21 +27,37 @@ if ( $brand != '' && $model != '' ){
 	$title = get_the_title();
 } ?>
 			<header>
-				<h1 class="entry-title"><?php echo $title; ?></h1>
-				<div class="review-hero-slider">
-					
-				</div>
+				<h1 class="entry-title"><?php echo $title; ?> Review</h1>
 			</header>
 			<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 			<div class="entry-content">
 
-			<?php if ( has_post_thumbnail() ) : ?>
-				<div class="row">
-					<div class="column">
-						<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
-					</div>
-				</div>
-			<?php endif; ?>
+<?php
+$models = get_field('model');
+if( $models ):
+    foreach( $models as $post):
+        setup_postdata($post);
+		if( have_rows('model_photos') ): ?>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="review-model-photos-slider gallery js-flickity">
+			<?php while ( have_rows('model_photos') ) : the_row();
+				$image = get_sub_field('image');
+				if( !empty($image) ): ?>
+					<img class="full-width gallery-cell" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+				<?php endif;
+			endwhile; ?>
+		<?php endif;
+    endforeach;
+    wp_reset_postdata();
+endif;?>
+</div>
+<div class="row">
+	<div class="small-12 columns" role="main">
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<div class="entry-content">
 			<?php the_content();
 			$review = get_field('written_review');
 			if( $review && $review != '' ){ ?>

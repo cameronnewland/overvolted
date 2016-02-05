@@ -20,6 +20,9 @@
 			bloginfo( 'name' ); echo ' | '; bloginfo( 'description' );
 		} elseif ( is_404() ) {
 			echo 'Error 404 Not Found | '; bloginfo( 'name' );
+		} elseif ( is_singular('reviews') ) {
+			wp_title( '' );
+			echo ' Review | Overvolted Electric Bike Reviews';
 		} elseif ( is_single() ) {
 			wp_title( '' );
 		} else {
